@@ -1,17 +1,23 @@
 import React from "react";
 
 function Navbar() {
+  const sidenavbar = ["Product", "Live Demo", "Pricing", "Docs", "Changelog"];
+
   return (
     <nav style={styles.navbar}>
+      {/* Left side: Logo */}
       <div style={styles.left}>
         <h2 style={styles.logo}>TrackOnFE</h2>
-        <ul style={styles.navLinks}>
-          <li>Product</li>
-          <li>Live Demo</li>
-          <li>Pricing</li>
-          <li>Docs</li>
-        </ul>
       </div>
+
+      {/* Middle: Navigation links */}
+      <ul style={styles.navLinks}>
+        {sidenavbar.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
+
+      {/* Right side: Buttons */}
       <div style={styles.right}>
         <button style={styles.btn}>Login</button>
         <button style={{ ...styles.btn, backgroundColor: "#61dafb", color: "#000" }}>
@@ -34,7 +40,6 @@ const styles = {
   left: {
     display: "flex",
     alignItems: "center",
-    gap: "20px",
   },
   logo: {
     margin: 0,
@@ -45,6 +50,9 @@ const styles = {
     gap: "20px",
     margin: 0,
     padding: 0,
+    flexGrow: 1,
+    justifyContent: "center",
+    cursor: "pointer", // centers the links in the middle
   },
   right: {
     display: "flex",

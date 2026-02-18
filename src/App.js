@@ -1,18 +1,16 @@
 import React from "react";
 import Navbar from "./components/navbar";
-import Sidebar from "./components/sidebar";
+import HeroSection from "./components/heroSect";
 function App() {
   return (
     <div style={{ display: "flex", flexDirection: "column", height: "100vh" }}>
       <Navbar />
-      <div style={{ display: "flex", flex: 1 }}>
-        <Sidebar />
+      <HeroSection/>
         <main style={{ flex: 1, padding: "20px" }}>
           <h1>Dashboard</h1>
-          <p>Welcome to TrackOnFE — your professional tracker!</p>
+          <p>Welcome to TrackOn — your professional tracker!</p>
         </main>
       </div>
-    </div>
   );
 }
 

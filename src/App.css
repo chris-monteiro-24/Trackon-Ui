@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+.dashboard-banner {
+  background-image: url("C:\Users\Administrator\Downloads\image.png"); /* path from public */
+  background-size: cover;                  /* makes it fill the area */
+  background-position: center center;      /* centers the image */
+  background-repeat: no-repeat;            /* prevents tiling */
+  height: 100vh;                           /* full viewport height */
+  width: 100%;                             /* full width */
+  position: relative;                      /* allows overlays if needed */
+}
