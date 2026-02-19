@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "./components/navbar";
 import HeroSection from "./components/heroSect";
 import "./App.css";
+import PricingCards from "./components/pricing";
+import ClientDetails from "./components/clientDetails";
 
 import AppDetails from "./components/appDetails";
 
@@ -15,6 +17,8 @@ function App() {
           <p>Welcome to TrackOn — your professional tracker!</p>
         </main>
         <AppDetails/>
+        < PricingCards/>
+        <ClientDetails/>
       </div>
   );
 }
