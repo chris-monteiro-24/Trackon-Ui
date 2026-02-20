@@ -1,5 +1,8 @@
+import { useState } from "react";
+
 function HeroSection() {
   const sectNavBar = ["Main page", "Reports", "Campaign"];
+  const [activeSection, setActiveSection] = useState("Main page");
 
   return (
     <section className="hero">
@@ -20,18 +23,24 @@ function HeroSection() {
       {/* Buttons */}
       <div className="buttons">
         <button className="primaryBtn">Get Started for free</button>
-        <button className="secondaryBtn">Live-demo</button>
+        <button className="secondaryBtn"></button>
       </div>
 
       {/* Section Nav Links */}
       <ul className="sectnavLinks">
         {sectNavBar.map((item, index) => (
-          <li key={index}>{item}</li>
+          <li key={index} onClick={() => setActiveSection(item)}>
+            {item}
+          </li>
         ))}
       </ul>
 
-      {/* Dashboard Banner */}
-      <div className="dashboard-banner"></div>
+      {/* Conditional Rendering */}
+      <div className="dashboard-banner">
+        {activeSection === "Reports" && (
+          <img src="/images/reports.png" alt="Reports Preview" />
+        )}
+      </div>
     </section>
   );
 }

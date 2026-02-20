@@ -4,20 +4,20 @@ import "../App.css";
 function PricingCards() {
   const plans = [
     {
-      plan: "Basic Plan",
-      price: "$19 /mo",
+      plan: "Trial Plan",
+      price: "Free",
       features: [
         "Bot & proxy protection",
         "VPN & anti‑detect defense",
         "Blocks click farms & spy tools",
         "Works across all trackers",
-        "14‑day free trial",
+        "1 month free",
       ],
-      color: "#4CAF50"
+      color: "#000c01"
     },
     {
-      plan: "Popular Plan",
-      price: "$29 /mo",
+      plan: "Standard Plan",
+      price: "$79.99 /mo",
       features: [
         "Auto installation",
         "Traffic up to 2M/day",
@@ -27,18 +27,6 @@ function PricingCards() {
       ],
       color: "#2196F3"
     },
-    {
-      plan: "Premium Plan",
-      price: "$49 /mo",
-      features: [
-        "Unlimited clicks volume",
-        "Unlimited users & domains",
-        "Lifetime data retention",
-        "Improved traffic processing",
-        "New interface & database architecture"
-      ],
-      color: "#FF9800"
-    }
   ];
 
   return (
