@@ -98,6 +98,12 @@ body{
   flex-grow: 1;
   justify-content: center;
   cursor: pointer;
+ 
+}
+.navLinks .navLinks-textdecoration-none {
+  text-decoration: none;
+   color:#33BFC4 !important;
+  font: 1.4em sans-serif !important;
 }
 
 .right {
@@ -288,8 +294,8 @@ body{
 }
 
 .client-card {
-  background: azure;
-  border-radius: 10px;
+  background: rgb(230, 255, 255);
+  border-radiuszure: 10px;
   padding: 20px;
   width: 250px;
   text-align: center;
@@ -348,46 +354,50 @@ body{
 }
 
 .footer {
-  padding: 20px;
+  padding: 80px 40px; /* increased padding for more height */
+  background-color: rgb(230, 255, 255); /* light background for contrast */
 }
 
-.footer-seperater {
- border-right: #33bfc4 solid 1px;
-}
-
-.footer-logo{
+.footer-logo {
   color: #33bfc4;
-  font-size: 24px;
+  font-size: 38px; /* slightly larger logo */
   font-weight: bold;
-}
-
-.footer-strip{
-  background-color: #33bfc4;
-  width: 100%;
-  padding: 10px;
-  color: white;
-  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 30px; /* more spacing below logo */
 }
 
 .footer-content {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
-  font-size: 16px !important;
-  font-weight: 400 !important;
+  justify-content: space-around;
+  text-align: left;
+  font-size: 18px; /* slightly larger text */
+  font-weight: 400;
+  margin-bottom: 40px; /* more spacing before strip */
 }
 
 .footer-content h4 {
-  margin: 0;
   color: #333;
-  font-size: 18px !important;
-  font-weight: 600 !important;
-  margin-bottom: 10px;
+  font-size: 22px; /* slightly larger heading */
+  font-weight: 600;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #33bfc4;
+  display: inline-block;
+  padding-bottom: 6px;
 }
 
-.footer-content p{
-  margin: 0;
+.footer-content p {
+  margin: 10px 0; /* more breathing room */
+  color: #555;
+}
+
+.footer-strip {
+  background-color: #33bfc4;
+  color: white;
+  padding: 10px; /* taller strip */
+  text-align: center;
+  font-size: 15px;
+  margin-top: 50px; /* more spacing above strip */
 }
 
 .contact-form {

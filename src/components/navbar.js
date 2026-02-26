@@ -39,7 +39,7 @@ function Navbar() {
 
       <ul className="navLinks">
         {sidenavbar.map((item, index) => (
-          <Link key={index} to={item.to} smooth={true} duration={500} className="navLink">
+          <Link key={index} to={item.to} smooth={true} duration={500} className="navLink navLinks-textdecoration-none">
             {item.name}
           </Link>
         ))}

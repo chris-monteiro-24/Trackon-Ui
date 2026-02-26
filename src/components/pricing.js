@@ -57,7 +57,6 @@ function PricingCards() {
       {/* Two buttons outside the cards */}
       <div className="pricing-global-buttons">
         {/* <button className="btn btn-letstalk">Let's Talk</button> */}
-        <button className="btn btn-services">Our Services</button>
       </div>
     </section>
   );
